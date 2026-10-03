@@ -21,6 +21,12 @@ const helpSteps = [
     "Choose how you would like to support the animals."
 ];
 
+// Form validation rules
+const formRules = {
+    minimumNameLength: 2,
+    emailPattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+};
+
 function showHelpInformation(choice) {
     const result = document.getElementById("helpResult");
 
@@ -106,14 +112,12 @@ function validateForm() {
 
     clearErrors();
 
-    if (name.value.trim().length < 2) {
+    if (name.value.trim().length < formRules.minimumNameLength) {
         showError("nameError", "Please enter your full name.");
         isValid = false;
     }
 
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!emailPattern.test(email.value.trim())) {
+    if (!formRules.emailPattern.test(email.value.trim())) {
         showError("emailError", "Please enter a valid email address.");
         isValid = false;
     }
@@ -164,11 +168,6 @@ function setupFormValidation() {
 
         if (validateForm()) {
             saveFormData();
-
-            document.getElementById("formSuccess").textContent =
-                "Thank you! Your interest information has been saved.";
-
-            clearErrors();
 
             document.getElementById("formSuccess").textContent =
                 "Thank you! Your interest information has been saved.";
