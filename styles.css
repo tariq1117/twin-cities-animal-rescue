@@ -219,3 +219,15 @@ footer p {
         align-self: flex-start;
     }
 }
+.error-message {
+    display: block;
+    color: #8B0000;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: #2F5D50;
+    font-weight: bold;
+    margin-top: 15px;
+}
