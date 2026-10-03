@@ -1,0 +1,221 @@
+/* Twin Cities Animal Rescue - Touchstone 3 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF8F0;
+    color: #333333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2F5D50;
+    color: #FFF8F0;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+nav a {
+    display: block;
+    color: #FFF8F0;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #DDEBDD;
+    color: #2F5D50;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section {
+    background-color: #DDEBDD;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #2F5D50;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+figure {
+    margin: 20px 0;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #333333;
+}
+
+picture {
+    display: block;
+}
+
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 15px auto;
+}
+
+ul,
+ol {
+    padding-left: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+fieldset {
+    border: 2px solid #2F5D50;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #2F5D50;
+    padding: 0 8px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    background-color: #FFF8F0;
+    color: #333333;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #2F5D50;
+    color: #FFF8F0;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #DDEBDD;
+    color: #2F5D50;
+    border: 1px solid #2F5D50;
+}
+
+a {
+    color: #2F5D50;
+}
+
+footer {
+    background-color: #2F5D50;
+    color: #FFF8F0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+
+    header {
+        padding: 35px;
+    }
+
+    header h1 {
+        font-size: 2.4rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    main {
+        padding: 35px;
+        gap: 25px;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    form {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    button {
+        width: auto;
+        align-self: flex-start;
+    }
+}
